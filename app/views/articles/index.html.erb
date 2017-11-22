@@ -1,0 +1,14 @@
+<p>
+  <%= link_to  "New Article", new_article_path %>
+</p>
+
+<ul>
+  <% @article.each do |a| %>
+  <li><%= link_to  "Edit Article", edit_article_path(a) %></li>
+  <li><%= link_to  "Delete Article", article_path(a), method: :delete, data: {confirm: "Are you sure?"} %></li>
+  <li><strong><%= a.title %></strong> </li>
+  <li><%= a.description %></li>
+  <li><%= link_to  "Read More", article_path(a) %></li>
+  <hr>
+  <% end %>
+</ul>
