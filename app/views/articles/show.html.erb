@@ -1,2 +1,13 @@
-<h1><%= @article.title %></h1>
-<h3><%= @article.description %></h3>
+<h2 style="color:white" align="center">
+  Title: <%= @article.title %>
+</h2>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h4 class="center">
+    <strong>
+      Description:
+    </strong>
+  </h4>
+  <hr>
+  <%= @article.description %>
+</div>
+
