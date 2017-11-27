@@ -10,7 +10,7 @@ body{
   
 }
 
-label, h1{
+label, h1, h2{
   color: white;
 }
 
@@ -80,4 +80,8 @@ footer ul li {
 .article-meta-info {
   border: 1px solid #eaeaea;
   margin-top: 15px;
+}
+
+.listing{
+  list-style: none;
 }
