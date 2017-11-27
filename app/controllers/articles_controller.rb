@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    @article.user = User.find(6)
+    @article.user = current_user
     if @article.save
       flash[:success] = 'Your blog is submitted, thank you!'
       redirect_to article_path(@article)
