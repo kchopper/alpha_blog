@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
  #for pagination
  gem 'will_paginate', '3.1.5'
  gem 'bootstrap-will_paginate', '1.0.0'
+
+ #test integration
+ gem 'rails-controller-testing'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
