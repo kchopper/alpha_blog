@@ -10,11 +10,13 @@
             <li class="article-title">
             <%= link_to @article.user.username, user_path(@article.user) %>
             </li>
-            </small></li>
           </div>
         </div>
       </ul>
-  <% end %>  
+      <% if @article.categories.any? %>
+        <p>Categories: <%=render  @article.categories %></p> 
+      <%end%>
+  <%end%>  
   <h4 class="center">
     <strong>
       Description:
@@ -28,7 +30,7 @@
       data: { confirm: "Are you sure you want to delete the article?"},
       class: "btn btn-xs btn-danger" %>
     <% end %>
-    <%= link_to  "View All Articles", articles_path %>
+    <%= link_to  "View All Articles", articles_path, class: "btn btn-xs btn-info" %>
   </div>
   <%= @article.description %>
 </div>

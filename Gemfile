@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-#Use bootstrap as a  wrapper
+# Use bootstrap as a  wrapper
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 # Use SCSS for stylesheets
@@ -30,11 +30,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
- #for pagination
+ # for pagination
  gem 'will_paginate', '3.1.5'
  gem 'bootstrap-will_paginate', '1.0.0'
 
- #test integration
+ # test integration
  gem 'rails-controller-testing'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -59,7 +59,7 @@ group :development do
 end
 
 group :production do
-  #Use postgress as the database in heroku
+# use postgress as the database in heroku
   gem 'pg'
 end
 
